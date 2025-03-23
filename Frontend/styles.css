@@ -1,0 +1,64 @@
+*, *::before, *::after{ box-sizing: border-box;}
+
+:root{
+    --clr-dark: rgb(13, 8, 34);
+    --clr-light: #f7f7f7;
+    --clr-accent: rgba(102, 51, 153, 0.651);
+    --clr-base: #b00b69;
+    --clr-accent-l: rgba(137, 43, 226, 0.507);
+    --clr-base-d: #b00b;
+}
+
+body{
+    color: var(--clr-light);
+    background-color: var(--clr-dark);
+    margin: 0;
+    padding: 0;
+    font-family: "Instagram Sans", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    margin: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+input, button{
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+}
+
+input{
+    background-color: var(--clr-dark);
+    box-shadow: inset 0 0 4px var(--clr-base);
+    border-radius: 8px;
+    color: var(--clr-light);
+}
+
+input:focus{
+    outline: none;
+    border: 1px solid var(--clr-base);
+    box-shadow: none;
+}
+
+button{
+    background-color: var(--clr-base);
+    color: var(--clr-light);
+    font-size: 1em;
+    font-weight: 700;
+    transition: all 0.15s;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: var(--clr-base-d);
+}
